@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Sayur dan Rempah</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Toko Sayur dan Rempah</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#products">Produk</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="hero-text">Mengoptimalkan Teknologi untuk Kemudahan Berbelanja Sayur dan Rempah</h1>
+            <p class="hero-text">Perkembangan teknologi informasi saat ini sangat memengaruhi dunia bisnis.</p>
+            <button onclick="belanjaSekarang()">Belanja Sekarang</button>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>Perkembangan teknologi informasi saat ini tak kalah dengan pesatnya perkembangan teknologi di Indonesia. Hal ini sangat memengaruhi dunia bisnis, karena bertumbuhnya teknologi informasi sebanding dengan bertumbuhnya internet di Indonesia. Toko Sayur dan Rempah adalah suatu usaha yang bergerak dalam bidang perdagangan. Kami memanfaatkan teknologi informasi untuk memberikan layanan terbaik kepada konsumen dengan menyediakan informasi produk yang lengkap dan akurat.</p>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Produk</h2>
+            <div class="product">
+                <h3>Tomat Segar</h3>
+                <p>Harga: Rp 10.000/kg</p>
+                <p>Segar, berasal dari petani lokal.</p>
+                <button onclick="beliProduk('Tomat Segar')">Beli Sekarang</button>
+            </div>
+            <div class="product">
+                <h3>Jahe</h3>
+                <p>Harga: Rp 15.000/100g</p>
+                <p>Rempah alami, segar.</p>
+                <button onclick="beliProduk('Jahe')">Beli Sekarang</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Kontak</h2>
+            <form onsubmit="kirimPesan(event)">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Pesan:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+            <p>Alamat: Jl. Mawar No. 10, Jakarta</p>
+            <p>Telepon: +62 21 1234 5678</p>
+            <p>Email: info@tokosayurrempah.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Toko Sayur dan Rempah</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
